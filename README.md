@@ -10,7 +10,7 @@ An op-amp this simple doesn't have too much of _open-loop gain_, thus the approx
 
 DIN and RCA jacks are provided for signal input. Since the _native_ input impedance is around **110 kΩ**, space for suitable load (`Rx` and `Cx`) is provided for perfect adaptation; but for added flexibility, it is possible to use the free input for a suitable RC combo in parallel, to match the appropriate cartridge load.
 
-Originally intended to be connected thru the [501 Input Selector board](), both output pins and power input are at compatible locations within each board. An aditional RCA **output** jack can be installed in order to use the circuit as a _stand-alone preamp_.
+Originally intended to be connected thru the [501 Input Selector board](../../../ta501), both output pins and power input are at compatible locations within each board. An aditional RCA **output** jack can be installed in order to use the circuit as a _stand-alone preamp_.
 
 The use of an _asymmetric_ power supply (and its associated feedback _DC-blocking capacitor_) means that **it takes a few seconds** for the preamp to operate after powerup (or a noticeable supply voltage change).
 
@@ -32,7 +32,7 @@ Despite being designed around a 12 Volt power supply, this can be run from a sin
 The stated values are designed around these _ammendments_ to the **RIAA curve**; but since they're currently _deprecated_, you may get **improved bass response** by turning back to RIAA correction:
 
 - `C104/C204`: do not mount (Neumann ammendment)
-- `C106/C206`: use **470 nF** or more instead of 100 nF (which made a _-3 dB point at 20 Hz_ **over 108 kΩ** of the _501 board_ input)
+- `C106/C206`: use **470 nF** or more instead of 100 nF (which made a _-3 dB point at 20 Hz_ **over 108 kΩ** of the input on the _original design_ of the 501 board)
 
 ## Specs
 
